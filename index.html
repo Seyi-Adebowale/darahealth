@@ -19,84 +19,92 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="logo">DaraHealthCareServices</div>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo" />
+      </div>
+      <button class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars open-icon"></i>
+        <i class="fas fa-times close-icon" style="display: none"></i>
+      </button>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Main Section -->
     <section class="main-content">
-      <!-- Left Side: Text and Buttons -->
-      <div class="text-section">
-        <h1>
-          Compassionate <span class="highlight">Home Care</span> Tailored to You
-        </h1>
-        <p>
-          Providing high-quality, personalized domiciliary care services that
-          bring comfort and support directly to your doorstep.
-        </p>
-        <div class="buttons">
-          <button class="get-started">Get Started</button>
-          <button class="services">Our Services</button>
+      <div class="hero">
+        <div class="text-section">
+          <h1>
+            Compassionate <span class="highlight">Home Care</span> Tailored to
+            You
+          </h1>
+          <p>
+            Providing high-quality, personalized domiciliary care services that
+            bring comfort and support directly to your doorstep.
+          </p>
+          <div class="buttons">
+            <button class="get-started">Get Started</button>
+            <button class="services">Our Services</button>
+          </div>
         </div>
 
-        <!-- Stats Section -->
-        <div class="stats">
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="fas fa-user-nurse"></i>
-            </div>
-            <div class="stat-text">
-              <strong>100+</strong>
-              <p>Caregivers</p>
-            </div>
-          </div>
-
-          <div class="divider"></div>
-
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="fas fa-calendar-alt"></i>
-            </div>
-            <div class="stat-text">
-              <strong>10+</strong>
-              <p>Years of Experience</p>
+        <div class="carousel">
+          <div class="carousel-image">
+            <img src="img/pexels-kampus-7551686.jpg" alt="Nursing Home Care" />
+            <div class="carousel-overlay">
+              <h3>For Homebound Patients</h3>
+              <p>
+                Comprehensive support for patients who prefer to recover in the
+                comfort of their own home.
+              </p>
             </div>
           </div>
-
-          <div class="divider"></div>
-
-          <div class="stat-item">
-            <div class="stat-icon">
-              <i class="fas fa-users"></i>
-            </div>
-            <div class="stat-text">
-              <strong>2k+</strong>
-              <p>Satisfied Clients</p>
-            </div>
-          </div>
+          <!-- Carousel controls and additional images can be added here -->
         </div>
       </div>
-
-      <!-- Right Side: Image Carousel -->
-      <div class="carousel">
-        <div class="carousel-image">
-          <img src="img/pexels-kampus-7551686.jpg" alt="Nursing Home Care" />
-          <div class="carousel-overlay">
-            <h3>For Homebound Patients</h3>
-            <p>
-              Comprehensive support for patients who prefer to recover in the
-              comfort of their own home.
-            </p>
+      
+      <!-- Stats Section -->
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-user-nurse"></i>
+          </div>
+          <div class="stat-text">
+            <strong>100+</strong>
+            <p>Caregivers</p>
           </div>
         </div>
-        <!-- Carousel controls and additional images can be added here -->
+
+        <div class="divider"></div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <div class="stat-text">
+            <strong>10+</strong>
+            <p>Years of Experience</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="stat-item">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-text">
+            <strong>2k+</strong>
+            <p>Satisfied Clients</p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="featured-section">
@@ -263,13 +271,15 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
-          <p class="footer-column-title">AfrinHealth</p>
+          <p class="footer-column-title">Dara Health Care Services</p>
           <p class="footer-description">
             Providing personalized, high-quality healthcare at home with a
             variety of patient resources accessible via smartphone.
           </p>
-          <p class="footer-contact">+44123456<br /><br />123 Health Lane
-            Wellness City, <br>HC 45678, Country Name</p>
+          <p class="footer-contact">
+            +44123456<br /><br />123 Health Lane Wellness City, <br />HC 45678,
+            Country Name
+          </p>
           <div class="social-icons">
             <a href="#" class="social-icon"
               ><i class="fab fa-facebook-f"></i
@@ -319,5 +329,7 @@
         © 2024 Dara Health Care Services. All rights reserved.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
