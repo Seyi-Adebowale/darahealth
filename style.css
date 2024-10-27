@@ -163,8 +163,13 @@ button {
   cursor: pointer;
   font-family: inherit;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+a {
+-webkit-tap-highlight-color: transparent;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 .get-started {
   background-color: var(--color-purple);
   color: #fff;
