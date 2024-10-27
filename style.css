@@ -26,11 +26,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 .logo img {
-  height: 80px;
+  height: 70px;
   width: 75px;
   margin: 0;
+}
+.logo p{
+  color: var(--color-purple);
+  font-weight: bold;
+  font-size: 14px;
 }
 .navbar ul {
   list-style-type: none;
