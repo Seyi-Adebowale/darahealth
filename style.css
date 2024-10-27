@@ -80,13 +80,13 @@ nav ul li a:hover,
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
+    width: 45px;
     height: 45px;
     border-radius: 50%;
   }
   .navbar nav {
     position: fixed;
-    top: 90px;
+    top: 80.5px;
     right: -100%;
     height: max-content;
     width: 70%;
