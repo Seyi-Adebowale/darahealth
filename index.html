@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="img/agilelogo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -20,7 +20,7 @@
   <body>
     <header class="navbar">
       <div class="logo">
-        <img src="img/logo.jpg" alt="Logo" />
+        <img src="img/logo.png" alt="Logo" />
       </div>
       <button class="menu-toggle" id="mobile-menu">
         <i class="fas fa-bars open-icon"></i>
@@ -56,20 +56,49 @@
         </div>
 
         <div class="carousel">
-          <div class="carousel-image">
-            <img src="img/pexels-kampus-7551686.jpg" alt="Nursing Home Care" />
+          <!-- Carousel Items -->
+          <div class="carousel-image active">
+            <img src="img/Health-Equity-in-Action-1200x800.jpg" alt="Nursing Home Care" />
             <div class="carousel-overlay">
-              <h3>For Homebound Patients</h3>
+              <h3>Homebound Care</h3>
               <p>
-                Comprehensive support for patients who prefer to recover in the
-                comfort of their own home.
+                Support for individuals who need assistance with daily living at home.
               </p>
             </div>
           </div>
-          <!-- Carousel controls and additional images can be added here -->
+
+          <div class="carousel-image">
+            <img src="img/pexels-kampus-7551686.jpg" alt="Elderly Care" />
+            <div class="carousel-overlay">
+              <h3>Elderly Support</h3>
+              <p>
+                Compassionate assistance tailored for seniors offering help with daily activities.
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-image">
+            <img
+              src="img/Post-Hospital-Home-Care-Web-Version.png"
+              alt="Post-Surgery Care"
+            />
+            <div class="carousel-overlay">
+              <h3>Post-Surgery Help</h3>
+              <p>
+                Specialized home care services for patients recovering from surgery.
+              </p>
+            </div>
+          </div>
+
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+          </div>
         </div>
       </div>
-      
+
       <!-- Stats Section -->
       <div class="stats">
         <div class="stat-item">
@@ -118,7 +147,7 @@
           alt="Partner Logo 1"
         />
         <img
-          src="https://via.placeholder.com/100x40?text=Partner+Logo+2"
+          src="https://via.placeholder.com/100x40?text=Partner+Logo+1"
           alt="Partner Logo 2"
         />
         <img
@@ -126,7 +155,7 @@
           alt="Partner Logo 3"
         />
         <img
-          src="https://via.placeholder.com/100x40?text=Partner+Logo+2"
+          src="https://via.placeholder.com/100x40?text=Partner+Logo+1"
           alt="Partner Logo 4"
         />
       </div>
@@ -217,11 +246,7 @@
           <h3>John Doe</h3>
           <p>Care Services Manager</p>
         </div>
-        <div class="team-member">
-          <img src="https://placehold.co/200x200" alt="Michael Falade" />
-          <h3>John Doe</h3>
-          <p>CTO</p>
-        </div>
+        
       </div>
     </section>
 
@@ -232,25 +257,16 @@
         <div class="testimonial-card">
           <h3 class="testimonial-card-title">John Doe</h3>
           <p class="testimonial-card-text">
-            "AfrinHealth made it easy to receive quality healthcare from the
+            "Dara Health Care Services made it easy to receive quality healthcare from the
             comfort of my home. The process was simple, and the care was
             exceptional."
           </p>
           <div class="rating">★★★★☆</div>
         </div>
         <div class="testimonial-card">
-          <h3 class="testimonial-card-title">Mary Johnson</h3>
-          <p class="testimonial-card-text">
-            "I was able to schedule regular check-ups for my elderly mother
-            without the hassle of hospital visits. AfrinHealth truly understands
-            the needs of patients."
-          </p>
-          <div class="rating">★★★★★</div>
-        </div>
-        <div class="testimonial-card">
           <h3 class="testimonial-card-title">Samuel Williams</h3>
           <p class="testimonial-card-text">
-            "The convenience and professionalism from AfrinHealth's domiciliary
+            "The convenience and professionalism from Dara Health Care Services's domiciliary
             care services are unmatched. Highly recommended for anyone needing
             home healthcare."
           </p>
@@ -259,7 +275,7 @@
         <div class="testimonial-card">
           <h3 class="testimonial-card-title">Grace Li</h3>
           <p class="testimonial-card-text">
-            "AfrinHealth helped us get personalized care for our family member
+            "Dara Health Care Services helped us get personalized care for our family member
             post-surgery, allowing for a smooth recovery at home. Fantastic
             service!"
           </p>

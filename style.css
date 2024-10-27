@@ -1,6 +1,6 @@
 /* Basic Reset */
 :root {
-  --color-purple: #3b3374;
+  --color-purple: #670076;
 }
 * {
   margin: 0;
@@ -46,7 +46,7 @@ body {
   color: #333;
 }
 nav ul li a:hover,
-nav ul li a.selected {
+.navbar a.active {
   color: var(--color-purple);
   font-weight: bold;
   text-decoration: underline;
@@ -61,6 +61,9 @@ nav ul li a.selected {
 }
 
 @media (max-width: 768px) {
+  .navbar{
+    padding: 5px 20px;
+  }
   .menu-toggle {
     display: block;
     font-size: 26px;
@@ -136,14 +139,24 @@ nav ul li a.selected {
 
 .buttons {
   margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-
+@media(max-width: 768px){
+  .buttons{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+  
+}
 button {
   padding: 10px 20px;
-  margin-right: 10px;
   border: none;
   cursor: pointer;
   font-family: inherit;
+  font-size: 16px;
 }
 
 .get-started {
@@ -162,13 +175,21 @@ button {
   flex: 1;
   display: flex;
   align-items: stretch;
+  overflow: hidden;
 }
 
 .carousel-image {
   position: relative;
   flex: 1;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding-bottom: 5px;
 }
-
+.carousel-image.active {
+  display: block; 
+  opacity: 1;
+}
 .carousel img {
   height: 100%;
   width: 100%;
@@ -182,7 +203,7 @@ button {
   left: 20px;
   right: 20px;
   color: #fff;
-  background: rgb(59, 51, 116, 0.7);
+  background: rgb(103, 0, 118, 0.6);
   padding: 10px;
   border-radius: 5px;
 }
@@ -190,22 +211,60 @@ button {
 .carousel-overlay h3 {
   margin-bottom: 5px;
 }
+.carousel-overlay p{
+  font-size: 14px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: var(--color-purple);
+}
 @media(max-width: 768px){
   .hero{
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 15px;
   }
   .text-section{
     max-width: 100%;
     margin: 0 auto 20px;
     text-align: center;
   }
+  .text-section h1{
+    line-height: 40px;
+    font-size: 28px;
+  }
   .carousel{
     max-width: 100%;
   }
   .main-content{
-    padding: 20px 60px;
+    padding: 10px 20px;
   }
-  
+  .carousel-image{
+    min-height: 300px;
+    max-height: 350px;
+    padding: 5px;
+  }
+  .carousel-overlay h3{
+    font-size: 16px;
+  }
+  .carousel-overlay p{
+    line-height: 20px;
+  }
 }
 .stats {
   display: flex;
@@ -258,8 +317,9 @@ button {
 }
 .featured-section {
   background-color: var(--color-purple);
-  padding: 20px 0;
+  padding: 20px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .featured-text {
@@ -371,7 +431,7 @@ button {
 }
 
 .team-section {
-  background-color: #3b2e65; /* Dark purple background */
+  background-color: var(--color-purple);
   color: white;
   text-align: center;
   padding: 50px 20px;
@@ -421,7 +481,6 @@ button {
   padding: 40px 60px 60px;
   text-align: center;
 }
-
 .heading-title {
   font-size: 1.5rem;
   margin-bottom: 0.5em;
@@ -434,19 +493,29 @@ button {
 }
 
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto 0;
 }
 
+
 .testimonial-card {
-  background: #f9f9f9;
+  background: #f1f1f1;
   padding: 20px;
   border-radius: 8px;
   text-align: left;
+  width: 30%; 
+  min-width: 250px;
+  height: 270px;
 }
-
+@media (max-width: 768px){
+  .container{
+    padding: 40px 20px 60px;
+  }
+}
 .testimonial-card-title {
   font-size: 1rem;
 }
@@ -520,6 +589,7 @@ button {
   gap: 10px;
   align-items: center;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .newsletter-input {
