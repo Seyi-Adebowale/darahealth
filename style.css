@@ -172,6 +172,13 @@ button {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+@media (hover: hover) {
+  button:hover, .explore-btn:hover{
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);;
+  }
+}
+
 a {
 -webkit-tap-highlight-color: transparent;
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -184,6 +191,7 @@ a {
 .services {
   background-color: #f0f0f0;
   color: #333;
+  
 }
 
 .carousel {
@@ -658,6 +666,9 @@ a {
   font-size: 16px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
+}
+.social-icons i:hover{
+  background-color: var(--color-purple);
 }
 .footer-contact {
   color: #333;
